@@ -1,2 +1,8 @@
-# web-231
- Repo for class web-231
+# WEB 231 Enterprise JavaScript I
+
+
+## Contributors
+
+
+- Alex Haefner
+- Richard Krasso
