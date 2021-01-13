@@ -1,38 +1,55 @@
+/**
+=================================================
+; Title: Assignment 1.3 - Environment Setup
+; Author: Alex Haefner
+; Date: 12 Jan 2021
+; Modified By: Alex Haefner
+; Description: CSS file to add color, formatting,
+; and feedback on hover to index.html
+;================================================
+*/
+
+/* Importing google fonts using link */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 body {
-
-
-	  font-family: Oswald;
+	font-family: Oswald;
 }
 
 .container {
-
-margin-top: 50px;
-margin-left: 100px;
-margin-right: 100px;
-
-
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
-h1, h2, h3, h4 {
-background-color: #3C275A;
-color: white;
-border: 1px solid #D6A800;
-padding: 10px;
+
+/* Selecting all headings and styling them with color, padding, and a border.*/
+
+h1,
+h2,
+h3,
+h4 {
+	background-color: #3C275A;
+	color: white;
+	border: 1px solid #D6A800;
+	padding: 10px;
 }
 
 a {
-color: #453674;
-  text-decoration: none;
-
+	color: #453674;
+	text-decoration: none;
 }
+
+
+/* When a user hovers over a link, it will change to the color specified below. */
 
 a:hover {
-  background-color: #D6A800;
-color: #4F3674;
-
+	background-color: #D6A800;
+	color: #4F3674;
 }
 
-a:visited {
-color: #3C275A;
 
+/* This will change colors to indicate that it's been previously visited. */
+
+a:visited {
+	color: #3C275A;
 }
