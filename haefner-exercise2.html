@@ -1,0 +1,36 @@
+<!--
+   ==================================================
+   ; Title: Exercise 2.2
+   ; Author: Alex Haefner
+   ; Date: 15 Jan 2021
+   ; Modified By: Alex Haefner
+   ; Description: This program's purpose is to add 
+   ; JavaScript to an HTML page. 
+   ; Sources: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+   ; Sources:https://www.w3schools.com/jsref/met_win_alert.asp
+   ;=================================================
+   -->
+   <!DOCTYPE html>
+   <html>
+      <head>
+         <meta charset="UTF-8">
+         <title>WEB 231 – Enterprise JavaScript I</title>
+         <link rel="stylesheet" href="global.css">
+      </head>
+      <body>
+         <h1>Exercise 2.2 - Hello JavaScript</h1>
+         <button type="button" id = "btnMyCourse" onclick="myAlert()">What course am I taking?</button>  
+         <p id = "txtMyWorld"></p>
+         <a href="web-231/week-1/index.html" class="return-home">Return</a>
+         <script>
+            function myAlert() {
+               alert("WEB 231 – Enterprise JavaScript I.");
+            }
+            window.addEventListener('load', (event) => {
+               document.getElementById("txtMyWorld").innerHTML = "You are now in Haefner's world!";
+               console.log('page is fully loaded');
+               
+                   });
+         </script>
+      </body>
+   </html>
