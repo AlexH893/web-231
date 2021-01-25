@@ -1,0 +1,20 @@
+/*
+  Title: haefner-temp-conversion.css
+  Author: Alex Haefner
+  Date: 1-21-2021
+  Description: CSS Styling for the temperature conversion assignment.
+*/
+
+.app-header {
+	text-align: center;
+}
+
+
+/* The styling for the results card. */
+
+#conversion-results {
+	font-size: 28px;
+	text-align: center;
+	width: 600px;
+	margin: 3% auto 0;
+}
