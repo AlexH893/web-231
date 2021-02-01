@@ -1,0 +1,20 @@
+/*
+  Title: haefner-number-game.css
+  Author: Alex Haefner
+  Date: 1-29-2021
+  Description: CSS Styling for the number game assignment.
+*/
+
+.app-header {
+	text-align: center;
+}
+
+
+/* Styling for the results card */
+
+#number-results {
+	font-size: 28px;
+	text-align: center;
+	width: 600px;
+	margin: 3% auto 0;
+}

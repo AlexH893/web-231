@@ -1,0 +1,67 @@
+<!--
+  Title: haefner-number-game.html
+  Author: Alex Haefner
+  Date: 1-29-2021
+  Description: An HTML page that allows a user to input a guessed number, which will be 
+  checked to see if it matched the randomly generated number.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="global.css" type="text/css">
+	<!--../global.css for live content-->
+	<link rel="stylesheet" href="haefner-number-game.css" type="text/css">
+	<title>title</title>
+</head>
+
+<body>
+	<div id="container">
+		<h1 class="app-header">Welcome to the numbers game!</h1>
+		<div class="card">
+			<div class="card-title">Pick a number between 1 and 10</div>
+			<div class="card-content">
+				<div class="form-field">
+					<label for="txtFahrenheit">Guess the number:</label>
+					<input type="text" class="input" id="txtMyNumber" name="myNumber">
+					<br> </div>
+				<div class="form-field">
+					<button id="btnSubmit" class="btn btn-primary full-width" onclick="myFunction()">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="number-results">
+		<div class="card">
+			<div class="card-title">Results</div>
+			<div class="card-content" id="results"></div>
+		</div>
+	</div>
+	</div> 
+	<a href="web-231/index.html" class="return-home">Return</a>
+	<script>
+	function myFunction() {
+		//Generate a random number between 1 and 10 and assign it to a variable named rnd.
+		const rnd = Math.floor((Math.random() * 10) + 1);
+		//Putting the value from txtMyNumber and assigning it to myNumber
+		let myNumber = document.getElementById("txtMyNumber").value;
+		//Comparing myNumber & checking to see if it's greater than the randomly generated num
+		//If it is, the results will display appropriate message. If not it will then check to see
+		//if it's less than the random number. If it is it will display the message stating so. If not,
+		//it will check to see if the inputted num matches the random num, in which if true a message will 
+		// be displayed.
+		if(myNumber > rnd) {
+			document.getElementById('results').innerHTML = "The number is less than " + myNumber;
+		} else if(myNumber < rnd) {
+			document.getElementById('results').innerHTML = "The number is greater than " + myNumber;
+		} else if(myNumber = rnd) {
+			document.getElementById('results').innerHTML = "Congratulations! You picked the correct number!";
+		}
+	}
+	</script>
+</body>
+
+</html>
