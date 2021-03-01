@@ -9,7 +9,7 @@ body {
 	font-family: 'Oswald', verdana, arial, sans-serif;
 }
 
-.container {
+#container {
 	margin-top: 50px;
 	margin-left: 100px;
 	margin-right: 100px;
@@ -162,4 +162,8 @@ ul {
 #results-container {
 	width: 600px;
 	margin: 3% auto 0;
+}
+
+h1 {
+	font-weight: 400;
 }
